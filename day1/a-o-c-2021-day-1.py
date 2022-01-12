@@ -41,7 +41,7 @@ def __is_window_available(current_pos, total_elements, window_size):
 if __name__ == '__main__':
     m_headers = {'cookie':'<INSERT HERE>'}
     url_input = requests.get("https://adventofcode.com/2021/day/1/input", headers=m_headers).text.splitlines()
-    file_input = open('report.txt', 'r').readlines()
+    file_input = open('report.txt', 'r').read().splitlines()
     print(count_increases_part_1(url_input))
     print(count_increases_part_2(url_input))
 

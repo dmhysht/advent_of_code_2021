@@ -37,8 +37,8 @@ def calculate_position_part_2(course):
 
 if __name__ == '__main__':
     m_headers = {'cookie': '<INSERT HERE>'}
-    url_input = requests.get("https://adventofcode.com/2021/day/2/input", headers=m_headers).text.split("\n")
-    file_input = open('course.txt', 'r').readlines()
+    url_input = requests.get("https://adventofcode.com/2021/day/2/input", headers=m_headers).text.splitlines()
+    file_input = open('course.txt', 'r').read().splitlines()
     print("Part: 1 =" + str(calculate_position_part_1(url_input)))
     print("Part: 2 =" + str(calculate_position_part_2(url_input)))
 

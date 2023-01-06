@@ -67,11 +67,6 @@ def __build_caves_model(map_raw):
     return caves_dict
 
 
-class Cave(object):
-    def __init__(self, name):
-        self.name = []
-
-
 if __name__ == '__main__':
     m_headers = {
         'cookie': '<COOKIES HERE>'}

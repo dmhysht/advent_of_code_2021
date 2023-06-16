@@ -15,7 +15,6 @@ def calculate_position_part_1(course):
             depth = depth - int(instruction.split(" ")[1])
         elif "down" in instruction:
             depth = depth + int(instruction.split(" ")[1])
-
     return horizontal_pos * depth
 
 

@@ -102,6 +102,7 @@ def __extract_data(raw):
         if is_dot:
             dots.add(row)
         else:
+
             instructions.append(row)
     return dots, instructions
 

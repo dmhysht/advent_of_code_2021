@@ -66,7 +66,7 @@ def __rotate_val(val):
 
 if __name__ == '__main__':
     m_headers = {
-        'cookie': '<COOKIE HERE>'}
+        'cookie': '_ga=GA1.2.1019470197.1641915265; session=53616c7465645f5f2fa0311b82fb49d01eff88e190b434916279b5c7f80db49c858fce2a3ad2b7d0be26b01b7045a04714e2c175b177f9990e0d2d6705121dbf; _gid=GA1.2.2011422423.1683136757; _gat=1'}
     url_input = requests.get("https://adventofcode.com/2021/day/15/input", headers=m_headers).text.splitlines()
     file_input = open('risk_level_map.txt', 'r').read().splitlines()
     start = time.time() * 1000

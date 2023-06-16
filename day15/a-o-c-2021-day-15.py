@@ -12,7 +12,7 @@ def evaluate_risk_v1(risk_map):
     rows, cols = (len(risk_map), len(risk_map[0]))
     visited = [[0 for x in range(cols)] for y in range(rows)]
     pq = PriorityQueue()
-    pq.put((0, (0,0)))
+    pq.put((0, (0, 0)))
 
     while not pq.empty():
         item = pq.get()

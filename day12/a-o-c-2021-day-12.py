@@ -8,6 +8,7 @@ import requests
 def cave_paths_v1(map_raw):
     caves_model = __build_caves_model(map_raw)
     valid_roads = list()
+
     __find_all_valid_paths("start", caves_model, "", valid_roads, 1, False)
     return len(valid_roads)
 
@@ -29,7 +30,6 @@ def __find_all_valid_paths(location, caves_model, current_road, valid_roads, all
         if connected_caves:
             for connected_cave in connected_caves:
                 if connected_cave == "start":
-
                     continue
                 if connected_cave.isupper():
                     __find_all_valid_paths(connected_cave, caves_model, current_road, valid_roads, allowed_to_visit,

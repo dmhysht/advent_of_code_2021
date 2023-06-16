@@ -30,6 +30,7 @@ def calculate_position_part_2(course):
         elif "up" in instruction:
             aim = aim - int(instruction.split(" ")[1])
         elif "down" in instruction:
+
             aim = aim + int(instruction.split(" ")[1])
 
     return horizontal_pos * depth

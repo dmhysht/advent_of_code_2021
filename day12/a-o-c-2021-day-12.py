@@ -8,6 +8,7 @@ import requests
 def cave_paths_v1(map_raw):
     caves_model = __build_caves_model(map_raw)
     valid_roads = list()
+
     __find_all_valid_paths("start", caves_model, "", valid_roads, 1, False)
     return len(valid_roads)
 

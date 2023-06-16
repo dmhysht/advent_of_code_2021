@@ -29,7 +29,6 @@ def __find_all_valid_paths(location, caves_model, current_road, valid_roads, all
         if connected_caves:
             for connected_cave in connected_caves:
                 if connected_cave == "start":
-
                     continue
                 if connected_cave.isupper():
                     __find_all_valid_paths(connected_cave, caves_model, current_road, valid_roads, allowed_to_visit,

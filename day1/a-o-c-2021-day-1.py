@@ -12,7 +12,6 @@ def count_increases_part_1(depth_position):
         if int(depth) > prev:
             count = count + 1
         prev = int(depth)
-
     return count
 
 

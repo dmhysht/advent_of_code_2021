@@ -59,7 +59,6 @@ def __run_polymerization(pairs_count, count_map, rules, number_of_runs):
     return count_map
 
 
-
 def __polymerization_run(pairs, rules, count_map):
     new_pairs = dict()
     for pair in pairs.keys():

@@ -77,7 +77,7 @@ def __lowest_among_adj(curr_height, adjacent_heights):
 
 if __name__ == '__main__':
     m_headers = {
-        'cookie': '_ga=GA1.2.1019470197.1641915265; _gid=GA1.2.1126259102.1671810120; session=53616c7465645f5f8bd539a7424636231369f415660cfc79caa8fb56510b51c6eb798681d4bd9484de8764dde352c3256d7a85c0d67955501fecd5282c51b383'}
+        'cookie': '<COOKIE HERE>'}
     url_input = requests.get("https://adventofcode.com/2021/day/9/input", headers=m_headers).text.splitlines()
     file_input = open('heightmap.txt', 'r').read().splitlines()
     print("Part: 1 = " + str(risk_eval_v1(url_input)))
